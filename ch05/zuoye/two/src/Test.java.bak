@@ -1,0 +1,15 @@
+package com.yyh.ch05;
+
+public class Test
+{
+	public static void main(String[] args){
+		Teacher te1=new Teacher();
+		
+        sc1.setName("Àî°×");
+		sc1.setAge(28);
+		sc1.setId(1001L);
+		System.out.println(te1);
+		Teacher te2=new Teacher("¶ÅÆÎ",25,1002L);
+        System.out.println(te2);
+	}
+}
