@@ -12,26 +12,37 @@ public class Flow
 	}
 	public String converse(int num)
 		{
-		if(num==1){
-			return "星期一";
-		}else if (num==2)
-		{
-			return"星期二";
-		}else if (num==3)
-		{
-			return"星期三";
-		}else if (num==4)
-		{
-			return"星期四";
-		}else if (num==5)
-		{
-			return"星期五";
-		}else if (num==6)
-		{
-			return"星期六";
-		}else  
-		{
-			return"星期日";
+		String week=null;
+		switch(num){
+			case 1:{
+				week="周一";
+				break;
+			}
+			case 2:{
+				week="周二";
+				break;
+			}
+				case 3:{
+				week="周三";
+				break;
+			}	
+			   case 4:{
+				week="周四";
+				break;
+			}	
+			    case 5:{
+				week="周五";
+				break;
+			}	
+			    case 6:{
+				week="周六";
+				break;
+			}	
+			default:{
+				week="周日";
+				break;
+			}
+			}
+            return week;
 		}
-	}
 }
